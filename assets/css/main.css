@@ -5038,6 +5038,30 @@ h4 {
 	}
   }
 
+  
+@media (max-width: 768px) {
+    .gallery-filter .actions {
+        display: flex;
+        flex-wrap: wrap; /* Ensures buttons wrap to the next line if they don't fit */
+        justify-content: center; /* Centers the buttons */
+        gap: 10px; /* Adds space between the buttons */
+    }
+
+    .gallery-filter .actions li {
+        list-style: none;
+    }
+
+    .gallery-filter .actions .button {
+        flex: 0 1 22%; /* Shrinks buttons to fit in a row */
+        display: flex;
+        align-items: center; /* Vertically centers the text */
+        justify-content: center; /* Horizontally centers the text */
+        padding: 10px; /* Adjust padding as needed */
+        text-align: center;
+        height: 100%; /* Ensures the button has a height for proper centering */
+    }
+}
+
 
 	
 
