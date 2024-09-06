@@ -1,0 +1,58 @@
+
+https://docs.google.com/forms/u/0/d/e/1FAIpQLScLWDox1gHV9GDpGRtj5hOoou1Ckq_I-CHZVoWckFAZyAWn3g/formResponse
+
+entry.332993087
+entry.612216868
+entry.1551874568
+
+
+
+Yes, you can connect your HTML form to a Google Form so that the responses are recorded in the Google Form and its associated Google Sheet. This method involves using the action URL of the Google Form and matching the input field names to those in the Google Form.
+
+Here’s how you can do it:
+
+1. Create a Google Form
+Go to Google Forms and create a new form.
+Add the same fields to your Google Form that you have in your HTML form (e.g., Name, Email, Message).
+2. Find the Form's Action URL and Field Names
+Once your Google Form is ready, click on the "Send" button and choose the "Link" tab.
+Copy the URL, but do not use it directly. Instead, follow these steps:
+Open the Google Form in your browser.
+Right-click on the form and select "Inspect" or press Ctrl+Shift+I to open the Developer Tools.
+In the Developer Tools, go to the "Network" tab.
+Submit a dummy entry in the form.
+Look for the request that was made to submit the form (it will have the form's URL).
+The form action URL will look something like this:
+bash
+Copy code
+https://docs.google.com/forms/u/0/d/e/1FAIpQLScv4.../formResponse
+3. Match the Input Field Names
+Each input in your HTML form needs to have the same name attribute as the fields in your Google Form. In the Developer Tools, when you submit a dummy form, look for the request's payload to see the field names. They usually look something like entry.xxxxxxxxx.
+4. Update Your HTML Form
+Here’s how your HTML form would look after the changes:
+
+html
+Copy code
+<form method="POST" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScv4.../formResponse" target="_blank">
+    <div class="fields">
+        <div class="field">
+            <label for="name">Name</label>
+            <input type="text" name="entry.xxxxxxxxx" id="name" required />
+        </div>
+        <div class="field">
+            <label for="email">Email</label>
+            <input type="email" name="entry.xxxxxxxxx" id="email" required />
+        </div>
+        <div class="field">
+            <label for="message">Message</label>
+            <textarea name="entry.xxxxxxxxx" id="message" rows="3" required></textarea>
+        </div>
+    </div>
+    <ul class="actions">
+        <li><input type="submit" value="Send Message" /></li>
+    </ul>
+</form>
+5. Replace the entry.xxxxxxxxx Values
+Replace entry.xxxxxxxxx in the HTML with the actual field names from the Google Form (found in the Developer Tools).
+6. Test the Form
+Once you've made the updates, submit the form from your website, and the responses should appear in your Google Form and the associated Google Sheet.

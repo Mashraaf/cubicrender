@@ -1,0 +1,357 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>CubicRENDER - Our Team</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+
+			body {
+				margin: 0;
+				font-family: 'Arial', sans-serif;
+				background-color: #f8f8f8;
+				color: #333;
+				line-height: 1.6;
+			}
+
+			#main {
+				padding: 50px 20px;
+				max-width: 1200px;
+				margin: 0 auto;
+				background-color: #fff; /* White background */
+				box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add some shadow */
+			}
+
+			#team-intro {
+				text-align: center;
+				margin-bottom: 50px;
+			}
+
+			#team-intro h2 {
+				font-size: 2.5rem;
+				color: #333;
+				margin-bottom: 20px;
+			}
+
+			#team-intro p {
+				font-size: 1.2rem;
+				color: #666;
+				max-width: 800px;
+				margin: 0 auto;
+				line-height: 1.8;
+			}
+
+			.team-cards {
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: space-between;
+				padding: 0 10%; /* Adds 10% padding on each side */
+			}
+
+			.team-card {
+				background-color: #fff;
+				border-radius: 10px;
+				box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+				overflow: hidden;
+				width: 30%; /* Adjusted width to allow space on sides */
+				min-width: 280px; /* Ensures a minimum width */
+				margin-bottom: 20px; /* Adds space between the rows */
+				transition: transform 0.3s, box-shadow 0.3s;
+			}
+
+			.team-card:hover {
+				transform: translateY(-10px);
+				box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+			}
+
+			.team-card img {
+				width: 100%;
+				height: auto;
+			}
+
+			.team-card .card-content {
+				padding: 20px;
+				text-align: center;
+			}
+
+			.team-card h3 {
+				font-size: 1.5rem;
+				margin-bottom: 10px;
+				color: #333;
+			}
+
+			.team-card h4 {
+				font-size: 1.1rem;
+				color: #666;
+				margin-bottom: 15px;
+			}
+
+			.team-card p {
+				font-size: 1rem;
+				color: #666;
+				line-height: 1.6;
+			}
+
+			@media screen and (max-width: 768px) {
+				.team-card {
+					width: calc(45% - 20px); /* Reduces width to maintain space on smaller screens */
+				}
+			}
+
+			@media screen and (max-width: 480px) {
+				.team-cards {
+					padding: 0 5%; /* Reduces side padding on very small screens */
+				}
+				.team-card {
+					width: 100%;
+				}
+			}
+
+			/* Ensure the footer is below the content */
+			#main::after {
+				content: "";
+				display: block;
+				clear: both;
+			}
+
+			footer {
+				clear: both;
+				padding: 20px 10%;
+				background-color: #f8f8f8;
+			}
+			/* Team Cards Section */
+			.team-cards {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 20px; /* Space between cards */
+				justify-content: center; /* Center align cards */
+				padding: 20px;
+			}
+
+			/* Individual Team Card */
+			.team-card {
+				background-color: #ffffff;
+				border-radius: 10px;
+				box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Initial shadow for floating effect */
+				transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+				overflow: hidden; /* Ensures the image doesn't overflow */
+				width: 300px; /* Adjust width as needed */
+				text-align: center; /* Center align text */
+				position: relative; /* For positioning pseudo-elements */
+			}
+
+			/* Team Card Image */
+			.team-card img {
+				width: 100%;
+				height: auto;
+				display: block;
+				border-bottom: 4px solid #ddd; /* Optional: adds a border between the image and content */
+			}
+
+			/* Card Content */
+			.card-content {
+				padding: 20px;
+			}
+
+			/* Hover Effect */
+			.team-card:hover {
+				transform: translateY(-10px); /* Move card up */
+				box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4); /* Deeper shadow on hover */
+			}
+
+			/* Optional: Add a pseudo-element for a stronger shadow effect */
+			.team-card::before {
+				content: "";
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				background: rgba(0, 0, 0, 0.1); /* Subtle overlay for additional depth */
+				z-index: -1; /* Place behind the card content */
+				border-radius: 10px;
+			}
+
+			/* Card Title and Description Styling */
+			.team-card h3, .team-card h4 {
+				margin: 10px 0;
+			}
+
+			.team-card p {
+				font-size: 1rem;
+				color: #555; /* Adjust text color if needed */
+			}
+
+		</style>
+
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Cubicrender</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="about-us.html">About Us</a></li>
+							<li><a href="pakages.html">Pakages</a></li>
+							<li><a href="projects.html">Projects</a></li>
+							<li class="active"><a href="ourteam.html">Our Team</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.facebook.com/cubicrender/" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="https://www.instagram.com/cubic_render/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div style="padding: 50px 0;"></div>
+					<!-- Team Cards Section -->
+					<section class="team-cards">
+						<!-- Team Member 1 -->
+						<div class="team-card">
+							<img src="images/ourteam/1.jpg" alt="Team Member 1">
+							<div class="card-content">
+								<h3>Noor Mashraf</h3>
+								<h4>Founder & CEO</h4>
+								<p>Mashraf spearheads CubicRENDER, driving the company’s vision for cutting-edge design and strategic growth.</p>
+							</div>
+						</div>
+
+						<!-- Team Member 2 -->
+						<div class="team-card">
+							<img src="images/ourteam/2.jpg" alt="Team Member 2">
+							<div class="card-content">
+								<h3>Engr. M. A. Hashem</h3>
+								<h4>Crafting Consultant</h4>
+								<p>Hashem combines engineering expertise with design insights, ensuring the technical excellence of our projects.</p>
+							</div>
+						</div>
+
+						<!-- Team Member 3 -->
+						<div class="team-card">
+							<img src="images/ourteam/3.jpg" alt="Team Member 3">
+							<div class="card-content">
+								<h3>Rashik Farhan</h3>
+								<h4>Head of Project Management</h4>
+								<p>Rashik oversees project execution, coordinating teams to deliver exceptional results from concept to completion.</p>
+							</div>
+						</div>
+						<!-- Team Member 4 -->
+						<div class="team-card">
+							<img src="images/ourteam/4.jpg" alt="Team Member 3">
+							<div class="card-content">
+								<h3>Mahfuz Anam</h3>
+								<h4>Visual Artist</h4>
+								<p>Mahfuz turns creative ideas into visually compelling designs, enhancing the artistic quality of our work.</p>
+							</div>
+						</div>
+						<!-- Team Member 5 -->
+						<div class="team-card">
+							<img src="images/ourteam/5.jpg" alt="Team Member 3">
+							<div class="card-content">
+								<h3>Sayma Alam Resa</h3>
+								<h4>Art Director</h4>
+								<p>Sayma leads our artistic vision, bringing creative direction and cohesion to every project.</p>
+							</div>
+						</div>
+						<!-- Team Member 6 -->
+						<div class="team-card">
+							<img src="images/ourteam/6.jpg" alt="Team Member 3">
+							<div class="card-content">
+								<h3>Farhan Sadiq</h3>
+								<h4>Visual Artist</h4>
+								<p>Farhan contributes to the team with detailed and expressive visual designs, elevating the impact of our projects.</p>
+							</div>
+						</div>
+						<!-- Team Member 7 -->
+						<div class="team-card">
+							<img src="images/ourteam/7.jpg" alt="Team Member 3">
+							<div class="card-content">
+								<h3>MD Shahriar Hossain</h3>
+								<h4>Media & Marketing</h4>
+								<p>Shahriar drives our media and marketing efforts, crafting strategies that amplify our brand and reach.</p>
+							</div>
+						</div>
+
+				<!-- Footer -->
+					<footer id="four">
+						<h2>Contact Us</h2>
+						<section>
+							<form method="post" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScLWDox1gHV9GDpGRtj5hOoou1Ckq_I-CHZVoWckFAZyAWn3g/formResponse">
+								<div class="fields">
+									<div class="field">
+										<label for="name">Name</label>
+										<input type="text" name="entry.332993087" id="name" />
+									</div>
+									<div class="field">
+										<label for="email">Email</label>
+										<input type="text" name="entry.612216868" id="email" />
+									</div>
+									<div class="field">
+										<label for="message">Message</label>
+										<textarea name="entry.1551874568" id="message" rows="3"></textarea>
+									</div>
+								</div>
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" /></li>
+								</ul>
+							</form>
+						</section>
+						<section class="split contact">
+							<section class="alt">
+								<h3>Address</h3>
+								<p>38/A, Road No. 12, Block B, <br />
+								Pallabi, Dhaka-1216</p>
+							</section>
+							<section>
+								<h3>Phone</h3>
+								<p><a href="tel:+8801521786891">+880 1521-786891</a></p>
+							</section>
+							<section>
+								<h3>Email</h3>
+								<p><a href="cubicrender.mcc@gmail.com">cubicrender.mcc@gmail.com</a></p>
+							</section>
+							<section>
+								<h3>Whatsapp</h3>
+								<a href="https://wa.me/01521786891" target="_blank">+880 1521-786521</a>
+							</section>
+							<section>
+								<hr style="border: 0; height: 1px; background-color: black; width: 100%; margin: 20px 0;" />
+								<h3>Social</h3>
+								<ul class="icons alt">
+									<li><a href="https://www.facebook.com/cubicrender/" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+									<li><a href="https://www.instagram.com/cubic_render/" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+								</ul>
+							</section>
+						</section>
+					</footer>
+
+
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
