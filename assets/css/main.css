@@ -5037,33 +5037,3 @@ h4 {
 	  width: 100% !important; /* Force full width on mobile */
 	}
   }
-
-  
-/* Mobile styles for buttons */
-@media (max-width: 768px) {
-    .gallery-filter .actions {
-        display: flex !important;
-        flex-wrap: wrap !important; /* Allows wrapping if buttons don't fit */
-        justify-content: center !important; /* Centers the buttons in the row */
-        gap: 10px !important; /* Adds space between the buttons */
-        padding: 0 !important; /* Remove any padding if causing issues */
-    }
-
-    .gallery-filter .actions li {
-        list-style: none !important;
-        margin: 0 !important;
-        padding: 0 !important;
-    }
-
-    .gallery-filter .actions .button {
-        flex: 0 1 22% !important; /* Shrinks the buttons to fit in a row */
-        display: flex !important;
-        align-items: center !important; /* Vertically centers the text */
-        justify-content: center !important; /* Horizontally centers the text */
-        padding: 10px 0 !important; /* Adjust padding as needed */
-        text-align: center !important;
-        height: auto !important; /* Allow button to adjust height automatically */
-        box-sizing: border-box !important; /* Ensure padding and border are included in width */
-    }
-}
-
