@@ -5039,28 +5039,34 @@ h4 {
   }
 
   
+/* Mobile styles for buttons */
 @media (max-width: 768px) {
     .gallery-filter .actions {
         display: flex;
-        flex-wrap: wrap; /* Ensures buttons wrap to the next line if they don't fit */
-        justify-content: center; /* Centers the buttons */
+        flex-wrap: wrap; /* Allows wrapping if buttons don't fit */
+        justify-content: center; /* Centers the buttons in the row */
         gap: 10px; /* Adds space between the buttons */
+        padding: 0; /* Remove any padding if causing issues */
     }
 
     .gallery-filter .actions li {
         list-style: none;
+        margin: 0;
+        padding: 0;
     }
 
     .gallery-filter .actions .button {
-        flex: 0 1 22%; /* Shrinks buttons to fit in a row */
+        flex: 0 1 22%; /* Shrinks the buttons to fit in a row */
         display: flex;
         align-items: center; /* Vertically centers the text */
         justify-content: center; /* Horizontally centers the text */
-        padding: 10px; /* Adjust padding as needed */
+        padding: 10px 0; /* Adjust padding as needed */
         text-align: center;
-        height: 100%; /* Ensures the button has a height for proper centering */
+        height: auto; /* Allow button to adjust height automatically */
+        box-sizing: border-box; /* Ensure padding and border are included in width */
     }
 }
+
 
 
 	
