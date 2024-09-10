@@ -227,7 +227,7 @@
 			  padding: 20px; /* Add some padding for spacing */
 			  border-radius: 10px; /* Rounded corners */
 			  width: 100%; /* Full width by default */
-			  max-width: 120%; /* Limit the max-width to the nav menu's width */
+			  max-width: 100%; /* Limit the max-width for desktop view */
 			  margin: 0 auto; /* Center the text section */
 			  text-align: center; /* Center-align the text */
 			  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
@@ -236,7 +236,7 @@
 			/* Responsive adjustment for mobile */
 			@media (max-width: 767px) {
 			  .text-section {
-				width: 110%; /* 100% width for mobile view */
+				max-width: 95%; /* Max-width for mobile view to keep it wider */
 				padding-left: 20px; /* Padding adjustments for mobile */
 				padding-right: 20px;
 			  }
@@ -267,6 +267,7 @@
 			  color: white; /* White text color */
 			  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Subtle text shadow */
 			}
+
 			/* Centering the team-section */
 			.team-section-container {
 			  display: flex; /* Use flexbox to center content */
@@ -277,7 +278,7 @@
 
 			/* Adjust padding and width for team-section */
 			.team-section {
-			  max-width: 800px; /* Set a max-width for better readability */
+			  max-width: 1000px; /* Increased max-width for better readability */
 			  width: 100%; /* Full width up to the max-width */
 			  padding: 20px; /* Consistent padding */
 			  box-sizing: border-box; /* Include padding in width */
@@ -290,7 +291,6 @@
 				padding-left: 0; /* Remove left padding */
 			  }
 			}
-
 
 		</style>
 
