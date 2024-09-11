@@ -4834,20 +4834,6 @@ input, select, textarea {
 		margin-bottom: 20px;
 	}
 
-	.read-more {
-		color: #2196F3;
-		cursor: pointer;
-		text-decoration: underline;
-	}
-
-	.full-review {
-		display: none;
-	}
-
-	.hidden {
-		display: none;
-	}
-
 	/* Horizontal Scrollbar Styling */
 	.testimonials-container::-webkit-scrollbar {
 		height: 10px;
