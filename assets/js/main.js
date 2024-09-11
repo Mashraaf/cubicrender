@@ -254,16 +254,22 @@
 			});
 
 		}
-	//Read More button
-		const readMoreBtn = document.querySelector('.read-more-btn');
-		const text = document.querySelector('.text');
+// Read More buttons
+const readMoreBtns = document.querySelectorAll('.read-more-btn'); // Select all buttons
+const texts = document.querySelectorAll('.text'); // Select all text containers
 
-		readMoreBtn.addEventListener('click', (e) => {
-			text.classList.toggle('show-more');
-			if(readMoreBtn.innerText === 'Read More') {
-				readMoreBtn.innerText = 'Read Less';
-			} else {
-				readMoreBtn.innerText = 'Read More';
-			}
-		})
+// Loop through each button and add event listeners
+readMoreBtns.forEach((btn, index) => {
+    btn.addEventListener('click', () => {
+        const text = texts[index]; // Get the corresponding text for this button
+        text.classList.toggle('show-more');
+
+        // Change button text based on state
+        if (btn.innerText === 'Read More') {
+            btn.innerText = 'Read Less';
+        } else {
+            btn.innerText = 'Read More';
+        }
+    });
+});
 })(jQuery);
