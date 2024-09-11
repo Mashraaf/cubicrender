@@ -5037,3 +5037,16 @@ h4 {
 	  width: 100% !important; /* Force full width on mobile */
 	}
   }
+
+	.text {
+	  font-size: 20px;
+	}
+	.moreText {
+	  display: none;
+	}
+	.text.show-more .moreText {
+	  display: inline;
+	}
+	.text.show-more .dots {
+	  display: none;
+	}
